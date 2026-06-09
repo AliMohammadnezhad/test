@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram id="user_story_map" name="User Story Mapping">
+    <mxGraphModel dx="1800" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ===== HEADER ROW LABEL ===== -->
+        <mxCell id="hdr_epic" value="Epic" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_story" value="User Story" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="10" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_release" value="Release" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="10" y="320" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ===== DIVIDER LINES ===== -->
+        <mxCell id="line1" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry x="100" y="100" width="1540" height="10" relative="1" as="geometry">
+            <mxPoint x="100" y="105" as="sourcePoint" />
+            <mxPoint x="1640" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="line2" value="" style="endArrow=none;html=1;strokeColor=#FF0000;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="310" as="sourcePoint" />
+            <mxPoint x="1640" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===================================================== -->
+        <!-- EPIC 1: ثبت‌نام کاربر -->
+        <!-- ===================================================== -->
+        <mxCell id="e1" value="🧑 ثبت‌نام کاربر" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="30" width="180" height="50" as="geometry" />
+        </mxCell>
+        <!-- Stories E1 -->
+        <mxCell id="e1s1" value="ایجاد حساب کاربری جدید" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="120" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e1s2" value="ورود به سامانه (Login)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="170" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e1s3" value="بازیابی رمز عبور" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="220" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e1s4" value="ویرایش پروفایل کاربری" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="270" width="160" height="40" as="geometry" />
+        </mxCell>
+        <!-- Release tag E1 -->
+        <mxCell id="e1r" value="Release 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="325" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ===================================================== -->
+        <!-- EPIC 2: مشاهده و انتخاب دوره -->
+        <!-- ===================================================== -->
+        <mxCell id="e2" value="📚 مشاهده و انتخاب دوره" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="30" width="200" height="50" as="geometry" />
+        </mxCell>
+        <!-- Stories E2 -->
+        <mxCell id="e2s1" value="مشاهده لیست دوره‌های موجود" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e2s2" value="جستجو و فیلتر دوره‌ها" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="170" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e2s3" value="مشاهده جزئیات دوره (پیش‌نیاز، ظرفیت)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e2s4" value="مشاهده زمان‌بندی کلاس‌ها" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="270" width="175" height="40" as="geometry" />
+        </mxCell>
+        <!-- Release tag E2 -->
+        <mxCell id="e2r" value="Release 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="325" width="175" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ===================================================== -->
+        <!-- EPIC 3: ثبت‌نام در دوره و پرداخت -->
+        <!-- ===================================================== -->
+        <mxCell id="e3" value="💳 ثبت‌نام در دوره و پرداخت" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="30" width="220" height="50" as="geometry" />
+        </mxCell>
+        <!-- Stories E3 -->
+        <mxCell id="e3s1" value="انتخاب دوره و ثبت درخواست" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="120" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e3s2" value="بررسی پیش‌نیاز و ظرفیت" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="170" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e3s3" value="پرداخت آنلاین شهریه" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="220" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e3s4" value="دریافت تأییدیه ثبت‌نام" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="270" width="185" height="40" as="geometry" />
+        </mxCell>
+        <!-- Release tag E3 -->
+        <mxCell id="e3r" value="Release 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="325" width="185" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ===================================================== -->
+        <!-- EPIC 4: مشاهده محتوای آموزشی (نقص کد اصلی) -->
+        <!-- ===================================================== -->
+        <mxCell id="e4" value="🎓 دسترسی به محتوای آموزشی" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="760" y="30" width="220" height="50" as="geometry" />
+        </mxCell>
+        <!-- Stories E4 -->
+        <mxCell id="e4s1" value="مشاهده محتوای آنلاین (ویدئو / متن)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="120" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e4s2" value="دانلود محتوای آفلاین" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="170" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e4s3" value="مشاهده جلسات کلاس آنلاین" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="220" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e4s4" value="پیگیری پیشرفت یادگیری" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="270" width="185" height="40" as="geometry" />
+        </mxCell>
+        <!-- Release tag E4 -->
+        <mxCell id="e4r" value="Release 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="325" width="185" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ===================================================== -->
+        <!-- EPIC 5: شرکت در آزمون -->
+        <!-- ===================================================== -->
+        <mxCell id="e5" value="📝 شرکت در آزمون" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="30" width="200" height="50" as="geometry" />
+        </mxCell>
+        <!-- Stories E5 -->
+        <mxCell id="e5s1" value="مشاهده زمان‌بندی آزمون‌ها" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="120" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e5s2" value="شروع و پاسخ به سؤالات آزمون" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="170" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e5s3" value="ذخیره و ارسال پاسخ‌ها" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="220" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e5s4" value="مشاهده وضعیت آزمون (قبل / حین)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="270" width="175" height="40" as="geometry" />
+        </mxCell>
+        <!-- Release tag E5 -->
+        <mxCell id="e5r" value="Release 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="325" width="175" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ===================================================== -->
+        <!-- EPIC 6: مشاهده نتایج و گواهینامه -->
+        <!-- ===================================================== -->
+        <mxCell id="e6" value="🏆 مشاهده نتایج و گواهینامه" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="30" width="210" height="50" as="geometry" />
+        </mxCell>
+        <!-- Stories E6 -->
+        <mxCell id="e6s1" value="مشاهده نمره و نتیجه آزمون" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="120" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e6s2" value="مشاهده بازخورد استاد" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="170" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e6s3" value="دریافت گواهینامه پایان دوره" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="220" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e6s4" value="مشاهده تاریخچه دوره‌های گذشته" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="270" width="185" height="40" as="geometry" />
+        </mxCell>
+        <!-- Release tag E6 -->
+        <mxCell id="e6r" value="Release 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="325" width="185" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ===================================================== -->
+        <!-- LEGEND -->
+        <!-- ===================================================== -->
+        <mxCell id="leg_title" value="راهنما" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="390" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" value="Epic (رنگ تیره‌تر)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="100" y="415" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" value="User Story" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="250" y="415" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" value="Release 1 (اول)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="380" y="415" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" value="Release 2 (دوم)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="510" y="415" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5" value="Release 3 (سوم)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="640" y="415" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_redline" value="--- خط قرمز: مرز Release 1 ---" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=2;fontSize=10;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="770" y="415" width="260" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

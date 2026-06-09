@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram id="erd" name="ERD">
+    <mxGraphModel dx="1600" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- User Entity -->
+        <mxCell id="2" value="User&#xa;user_id (PK)&#xa;name&#xa;email&#xa;password&#xa;role (Student/Instructor/Admin)&#xa;phone&#xa;created_at" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="180" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Instructor Entity (if separate) -->
+        <mxCell id="3" value="Instructor&#xa;instructor_id (PK)&#xa;user_id (FK)&#xa;bio&#xa;expertise&#xa;availability" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="180" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Course Entity -->
+        <mxCell id="4" value="Course&#xa;course_id (PK)&#xa;title&#xa;description&#xa;duration&#xa;price&#xa;capacity&#xa;category&#xa;status" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="180" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Class/Session Entity -->
+        <mxCell id="5" value="Class&#xa;class_id (PK)&#xa;course_id (FK)&#xa;schedule_start&#xa;schedule_end&#xa;location (Online/Offline)&#xa;capacity&#xa;current_enrolled" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="760" y="80" width="180" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Enrollment Entity -->
+        <mxCell id="6" value="Enrollment&#xa;enrollment_id (PK)&#xa;user_id (FK)&#xa;class_id (FK)&#xa;enrollment_date&#xa;status (Active/Completed/Dropped)&#xa;progress" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="180" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Payment Entity -->
+        <mxCell id="7" value="Payment&#xa;payment_id (PK)&#xa;enrollment_id (FK)&#xa;amount&#xa;payment_date&#xa;status (Paid/Pending/Refunded)&#xa;method" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="280" y="300" width="180" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Exam Entity -->
+        <mxCell id="8" value="Exam&#xa;exam_id (PK)&#xa;class_id (FK)&#xa;title&#xa;exam_date&#xa;duration&#xa;total_score" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#d4e1f5;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="180" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- ExamResult Entity -->
+        <mxCell id="9" value="ExamResult&#xa;result_id (PK)&#xa;exam_id (FK)&#xa;user_id (FK)&#xa;score&#xa;passed (Boolean)&#xa;attempt_date" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+          <mxGeometry x="760" y="300" width="180" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Content Entity -->
+        <mxCell id="10" value="Content&#xa;content_id (PK)&#xa;course_id (FK)&#xa;type (Video/Document/Quiz)&#xa;url_or_path&#xa;format (Online/Offline)" style="shape=swimlane;rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="1000" y="80" width="180" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+
+        <!-- User to Instructor -->
+        <mxCell id="11" value="1:1" style="endArrow=block;html=1;rounded=0;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- User to Enrollment -->
+        <mxCell id="12" value="enrolls 1..*" style="endArrow=block;html=1;rounded=0;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Course to Class -->
+        <mxCell id="13" value="has 1..*" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Instructor to Class -->
+        <mxCell id="14" value="teaches 1..*" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Class to Enrollment -->
+        <mxCell id="15" value="has 0..*" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Enrollment to Payment -->
+        <mxCell id="16" value="has 0..*" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Class to Exam -->
+        <mxCell id="17" value="has 0..*" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="5" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Exam to ExamResult -->
+        <mxCell id="18" value="has 0..*" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- User to ExamResult -->
+        <mxCell id="19" value="has 0..*" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="2" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Course to Content -->
+        <mxCell id="20" value="provides 1..*" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="4" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Course Prerequisites (self-relationship) -->
+        <mxCell id="21" value="requires" style="endArrow=open;html=1;rounded=0;endSize=12;dashed=1;" edge="1" parent="1" source="4" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="140" as="sourcePoint" />
+            <mxPoint x="700" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
